@@ -23,7 +23,6 @@ class cartSummary extends Component {
 
     calcQuality = i => i.reduce((acc, cur) => acc + cur.quality, 0)
 
-
     render() {
         const { items } = this.props;
         const { isCodeClick, msg } = this.state;
@@ -36,6 +35,7 @@ class cartSummary extends Component {
                             Subtotal ({this.calcQuality(items)} items)
                         </div>
                         ${items.reduce((acc, cur) => (acc + (cur.quality * cur.price)), 0)}
+
                     </div>
 
                     <div className="row row justify-content-between">
