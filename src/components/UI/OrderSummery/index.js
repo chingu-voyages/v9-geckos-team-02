@@ -22,7 +22,7 @@ class cartSummary extends Component {
     }
 
     calcQuality = i => i.reduce((acc, cur) => acc + cur.quality, 0)
-    
+
 
     render() {
         const { items } = this.props;
@@ -60,7 +60,7 @@ class cartSummary extends Component {
                             <div className="my-1 ml-3" onClick={this.codeClick}>
                                 {isCodeClick
                                     ? (<span>
-                                        <u className="mr-2">Hide Code Promo</u> - 
+                                        <u className="mr-2">Hide Code Promo</u> -
                                         </span>)
                                     : (<span>
                                         <u className="mr-2">Apply Code Promo</u> +
